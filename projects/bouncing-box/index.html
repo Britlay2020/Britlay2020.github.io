@@ -84,31 +84,6 @@
 				}
 			};
 
-			/** 
-			Comment from Ben:
-			
-			This is almost right, first it belongs inside
-			the handleBoxClick function since it's purpose
-			is to increase the speed of the box which happens
-			in response to the box being clicked. It's really
-			meant to replace your code on line 118.
-			
-			Second, in order for the speed to actually 
-			change, you have to write something like this:
-			
-				speed = speed + 3
-			
-			or 
-			
-				speed = speed - 3
-			*/
-			
-				if (speedX > 0) {
-					speedX = speedX + 3;
-				}
-				else {
-					speedX = speedX -3;
-				}	
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
 			it should increase the points total, increase the speed, and move the box to
@@ -122,7 +97,7 @@
 				}
 				else {
 					speedX = speedX -3;
-				}	 // replace this code
+				}	 
 				// your code to increase the points variable by 1
 				points = points +1;
 				changeBoxText(points);
